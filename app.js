@@ -21,7 +21,7 @@ form.addEventListener("submit", async function (e) {
 
 const displayImages = (images) => {
     images.forEach(img => {
-        if (img.show.image) { // if that specific property exists, if there's no image or null, then skip this code
+        if (img.show.image) { 
             console.log(img.show.image.medium);
             const newImg = document.createElement("img")
             newImg.src = img.show.image.medium;
